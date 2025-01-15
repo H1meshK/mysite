@@ -6,7 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['framer-motion'], // Adding 'framer-motion' to external to resolve the build error
+      external: ['framer-motion'], // Externalize if necessary, but ensure it is installed
     },
+  },
+  optimizeDeps: {
+    include: ['framer-motion'], // Ensure framer-motion is pre-bundled by Vite for production
   },
 });
