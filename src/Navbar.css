@@ -1,0 +1,28 @@
+#hk{
+    font-family: "Jockey One", sans-serif;
+  }
+  a{
+    font-family: "Jaldi", sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .iris::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    border-radius: 20px;
+    transition: all ease 0.3s;
+  }
+  .iris:hover::after{
+    left: 0;
+    bottom: 0;
+
+  }
